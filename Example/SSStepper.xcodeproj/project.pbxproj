@@ -31,6 +31,7 @@
 		02FE15EF9750AB86DA6E25BD /* Pods_SSStepper_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSStepper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C1D2DF34DF22C33115D4EA /* Pods-SSStepper_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSStepper_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SSStepper_Tests/Pods-SSStepper_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		313A3A6718564D02A97A34D1 /* Pods-SSStepper_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SSStepper_Example.debug.xcconfig"; path = "Target Support Files/Pods-SSStepper_Example/Pods-SSStepper_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		51CAE1A328F4231F002FA374 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CONTRIBUTING.md; path = ../CONTRIBUTING.md; sourceTree = "<group>"; };
 		51FD2D6028E6C28E007BB367 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51FD2D6228E6C540007BB367 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51FD2D6328E6C540007BB367 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
@@ -154,6 +155,7 @@
 			children = (
 				FE11804902EED0B5D78F47A5 /* SSStepper.podspec */,
 				C623BF1567DF132CEBA70724 /* README.md */,
+				51CAE1A328F4231F002FA374 /* CONTRIBUTING.md */,
 				CF1E1E2EC4A70C138E7D0C07 /* LICENSE */,
 			);
 			name = "Podspec Metadata";

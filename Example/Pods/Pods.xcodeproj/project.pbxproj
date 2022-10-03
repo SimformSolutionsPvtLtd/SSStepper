@@ -54,7 +54,7 @@
 		5F8C9F144CA94EAEF9A230276E09B646 /* Pods-SSStepper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSStepper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		634CD8F58A4169FC493048DA3796FA30 /* SSStepper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SSStepper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		70C3046A3578682F7B87EE51D9A5F5DC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7169531455FFE39FD5917CFA8CAAD08F /* Pods-SSStepper_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SSStepper_Tests"; path = Pods_SSStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7169531455FFE39FD5917CFA8CAAD08F /* Pods_SSStepper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73E53298410947570DF34EDD2B48656B /* Pods-SSStepper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSStepper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7F23BE713AB237ECA49E59E2D1993A0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				4E6B4FC19882177DEB093FC211856095 /* Pods-SSStepper_Example */,
-				7169531455FFE39FD5917CFA8CAAD08F /* Pods-SSStepper_Tests */,
+				7169531455FFE39FD5917CFA8CAAD08F /* Pods_SSStepper_Tests.framework */,
 				A8B687907BFCDC8C9CC885860060299A /* SSStepper.framework */,
 			);
 			name = Products;
@@ -283,7 +283,7 @@
 			);
 			name = "Pods-SSStepper_Tests";
 			productName = Pods_SSStepper_Tests;
-			productReference = 7169531455FFE39FD5917CFA8CAAD08F /* Pods-SSStepper_Tests */;
+			productReference = 7169531455FFE39FD5917CFA8CAAD08F /* Pods_SSStepper_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		468CED53C4328261C07889D61EA8C334 /* Pods-SSStepper_Example */ = {
