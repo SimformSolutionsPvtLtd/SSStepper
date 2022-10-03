@@ -10,9 +10,9 @@
 		001B5D7E44404958C8CD26F8BBC7571C /* Pods-SSStepper_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB43C03D15975FD8BB5F800CE01E028 /* Pods-SSStepper_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		00C65763A23DA3FB45F7B37DC79E46CA /* Pods-SSStepper_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F8ABE815253DAE160AA5B731C607056E /* Pods-SSStepper_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26B827A7D913F12B46341A3B12CEDBD5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		51FD2D2528E6BCF3007BB367 /* SSStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD2D2228E6BCF3007BB367 /* SSStepper.swift */; };
-		51FD2D2628E6BCF3007BB367 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD2D2328E6BCF3007BB367 /* ContentView.swift */; };
-		51FD2D2728E6BCF3007BB367 /* StepperModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FD2D2428E6BCF3007BB367 /* StepperModal.swift */; };
+		51D65B3F28F443A6004F78B8 /* SSStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D65B3C28F443A5004F78B8 /* SSStepper.swift */; };
+		51D65B4028F443A6004F78B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D65B3D28F443A5004F78B8 /* ContentView.swift */; };
+		51D65B4128F443A6004F78B8 /* StepperModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D65B3E28F443A5004F78B8 /* StepperModal.swift */; };
 		54D5CC7A39D56A3D1E96E12BA65A9920 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		75BCFDD98A739FA3A9214EC5EC65A74B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		7EE9F75E0443DD45C01BB70486741CE3 /* SSStepper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4038FEF76142F1F360CC79B08E26AD1B /* SSStepper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,13 +48,13 @@
 		43218425236D0C5679A87651A3AE5460 /* Pods-SSStepper_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SSStepper_Tests-dummy.m"; sourceTree = "<group>"; };
 		43CAB7580E60214E2739A478A937AB9E /* Pods-SSStepper_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SSStepper_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4E6B4FC19882177DEB093FC211856095 /* Pods-SSStepper_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SSStepper_Example"; path = Pods_SSStepper_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		51FD2D2228E6BCF3007BB367 /* SSStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSStepper.swift; sourceTree = "<group>"; };
-		51FD2D2328E6BCF3007BB367 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		51FD2D2428E6BCF3007BB367 /* StepperModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepperModal.swift; sourceTree = "<group>"; };
+		51D65B3C28F443A5004F78B8 /* SSStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SSStepper.swift; path = SSStepper/SSStepper.swift; sourceTree = "<group>"; };
+		51D65B3D28F443A5004F78B8 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = SSStepper/ContentView.swift; sourceTree = "<group>"; };
+		51D65B3E28F443A5004F78B8 /* StepperModal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StepperModal.swift; path = SSStepper/StepperModal.swift; sourceTree = "<group>"; };
 		5F8C9F144CA94EAEF9A230276E09B646 /* Pods-SSStepper_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSStepper_Example.release.xcconfig"; sourceTree = "<group>"; };
 		634CD8F58A4169FC493048DA3796FA30 /* SSStepper.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = SSStepper.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		70C3046A3578682F7B87EE51D9A5F5DC /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7169531455FFE39FD5917CFA8CAAD08F /* Pods-SSStepper_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SSStepper_Tests"; path = Pods_SSStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7169531455FFE39FD5917CFA8CAAD08F /* Pods_SSStepper_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SSStepper_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		73E53298410947570DF34EDD2B48656B /* Pods-SSStepper_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SSStepper_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7F23BE713AB237ECA49E59E2D1993A0B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -124,9 +124,9 @@
 		51FD2D2128E6BC87007BB367 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				51FD2D2328E6BCF3007BB367 /* ContentView.swift */,
-				51FD2D2228E6BCF3007BB367 /* SSStepper.swift */,
-				51FD2D2428E6BCF3007BB367 /* StepperModal.swift */,
+				51D65B3D28F443A5004F78B8 /* ContentView.swift */,
+				51D65B3C28F443A5004F78B8 /* SSStepper.swift */,
+				51D65B3E28F443A5004F78B8 /* StepperModal.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -182,7 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				4E6B4FC19882177DEB093FC211856095 /* Pods-SSStepper_Example */,
-				7169531455FFE39FD5917CFA8CAAD08F /* Pods-SSStepper_Tests */,
+				7169531455FFE39FD5917CFA8CAAD08F /* Pods_SSStepper_Tests.framework */,
 				A8B687907BFCDC8C9CC885860060299A /* SSStepper.framework */,
 			);
 			name = Products;
@@ -283,7 +283,7 @@
 			);
 			name = "Pods-SSStepper_Tests";
 			productName = Pods_SSStepper_Tests;
-			productReference = 7169531455FFE39FD5917CFA8CAAD08F /* Pods-SSStepper_Tests */;
+			productReference = 7169531455FFE39FD5917CFA8CAAD08F /* Pods_SSStepper_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		468CED53C4328261C07889D61EA8C334 /* Pods-SSStepper_Example */ = {
@@ -403,9 +403,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B96AB972FC613151472D6A924A40EB24 /* SSStepper-dummy.m in Sources */,
-				51FD2D2628E6BCF3007BB367 /* ContentView.swift in Sources */,
-				51FD2D2728E6BCF3007BB367 /* StepperModal.swift in Sources */,
-				51FD2D2528E6BCF3007BB367 /* SSStepper.swift in Sources */,
+				51D65B4028F443A6004F78B8 /* ContentView.swift in Sources */,
+				51D65B4128F443A6004F78B8 /* StepperModal.swift in Sources */,
+				51D65B3F28F443A6004F78B8 /* SSStepper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
