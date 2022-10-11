@@ -1,0 +1,16 @@
+PODS:
+  - SSStepper (0.1.0)
+
+DEPENDENCIES:
+  - SSStepper (from `../`)
+
+EXTERNAL SOURCES:
+  SSStepper:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SSStepper: 6db711cae1afcae8632319105a87854b10378ddd
+
+PODFILE CHECKSUM: 478c7fbb45275e008399c34056c3b74d624b1646
+
+COCOAPODS: 1.11.3

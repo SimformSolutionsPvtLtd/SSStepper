@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SSStepper_Example' do
+  pod 'SSStepper', :path => '../'
+
+  target 'SSStepper_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

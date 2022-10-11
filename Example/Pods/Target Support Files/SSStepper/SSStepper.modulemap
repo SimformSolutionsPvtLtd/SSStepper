@@ -1,0 +1,6 @@
+framework module SSStepper {
+  umbrella header "SSStepper-umbrella.h"
+
+  export *
+  module * { export * }
+}
