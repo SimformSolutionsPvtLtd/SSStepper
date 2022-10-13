@@ -268,6 +268,23 @@ var body: some Scene {
             )
 }
 ```
+Error Shake Animation
+-----------
+
+1. This property is used to change whether you want the `Shake` aniamtion on error while value is already at minimum or maximum. By default value is `true`.
+ 
+```swift
+@State private var number: Int = 0
+...
+var body: some Scene {
+    SSStepper(
+            value: $firstCustomisedNumber,
+            stepperModal: StepperModal(
+                            showErrorShakeAnimation = false
+                        )
+            )
+}
+```
 
 ## Coming Soon
 
