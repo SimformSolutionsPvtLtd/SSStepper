@@ -229,7 +229,7 @@ extension ContentView {
             return
         }
 
-        if !occured {
+        if !occured && model.showErrorShakeAnimation {
             withAnimation(.linear(duration: animationDuration).repeatCount(3)) {
                 errorOffset = 10
                 errorOffset = .zero
@@ -338,7 +338,7 @@ extension ContentView {
                 .font(.system(size: height > 20 ? 20 : height))
                 .foregroundColor(model.textColor)
                 .rotationEffect(.init(degrees: isVertical ? -axisAngle : 0))
-                .offset(x: errorOffset)
+                .offset(x: model.showErrorShakeAnimation ? errorOffset : 0)
         }
         .frame(width: outerShapeSize.width, height: outerShapeSize.height)
         .background(

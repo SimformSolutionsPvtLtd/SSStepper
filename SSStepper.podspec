@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'SSStepper'
-    s.version          = '0.1.0'
+    s.version          = '1.0.0'
     s.summary          = 'SSStepper is a custom stepper with gesture controls and flexible design as per your choice.'
 
     # This description is used to generate tags and improve search results.
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = '13.0'
 
-    s.source_files = 'Sources/SSStepper/*'
+    s.source_files = '**/Sources/SSStepper/**/*'
     s.swift_version = '5.0'
 
     # s.resource_bundles = {
