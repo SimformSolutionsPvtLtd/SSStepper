@@ -34,12 +34,14 @@ public struct StepperModal {
     private(set) var axis: Axis
     /**Feedback style of haptic feedback on value change. Select none for no haptic feedback. Default is .light*/
     private(set) var feedBackStyle: FeedbackStyle
-    /**Boolean for whether yopu want the shadow between both shapes or not. Default is true.**/
+    /**Boolean for whether you want the shadow between both shapes or not. Default is true.**/
     private(set) var showShadow: Bool
     /**Center text when user swipes down to minimize the value**/
     private(set) var minText: String
     /**Center text when user swipes up to maximize the value**/
     private(set) var maxText: String
+    /**Boolean for whether you want the Error Shake Animation while minimum or maximum valuet. Default is true.**/
+    private(set) var showErrorShakeAnimation: Bool
 
     public init(
         size: CGSize = CGSize(width: 150, height: 60),
@@ -55,7 +57,8 @@ public struct StepperModal {
         feedBackStyle: FeedbackStyle = .light,
         showShadow: Bool = true,
         minText: String = "MIN",
-        maxText: String = "MAX"
+        maxText: String = "MAX",
+        showErrorShakeAnimation: Bool = true
     ) {
         self.size = size
         self.maxNumber = maxNumber
@@ -71,6 +74,7 @@ public struct StepperModal {
         self.showShadow = showShadow
         self.minText = minText
         self.maxText = maxText
+        self.showErrorShakeAnimation = showErrorShakeAnimation
     }
 }
 
