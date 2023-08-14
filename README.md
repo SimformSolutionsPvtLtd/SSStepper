@@ -286,12 +286,29 @@ var body: some Scene {
 }
 ```
 
+Disable Vertical scroll Minimum/Maximum
+-----------
+
+1. This property is used to change whether you want to allow vertical scroll to jump directly to minimum or maximum values. By default value is `true`.
+ 
+```swift
+@State private var number: Int = 0
+...
+var body: some Scene {
+    SSStepper(
+            value: $firstCustomisedNumber,
+            stepperModal: StepperModal(
+                                enableVerticalMinMax = false
+                        )
+            )
+}
+```
+
 ## Coming Soon
 
-1. Feature to select which directions you want to allow user to swipe.<br/>
-2. Pass custom views instead of default Plus(+) and Minus(-) icon.<br/>
-3. Feature to discard operation on placing outer view to its place.<br/>
-4. Hold the Increse/decrease Buttons to operate continuously until hold.
+1. Pass custom views instead of default Plus(+) and Minus(-) icon.<br/>
+2. Feature to discard operation on placing outer view to its place.<br/>
+3. Hold the Increse/decrease Buttons to operate continuously until hold.
 
 **Up for a suggestions. Give suggestions for more features and customisations.**
 
