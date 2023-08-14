@@ -42,6 +42,8 @@ public struct StepperModal {
     private(set) var maxText: String
     /**Boolean for whether you want the Error Shake Animation while minimum or maximum valuet. Default is true.**/
     private(set) var showErrorShakeAnimation: Bool
+    /**Boolean to enable or disable Vertical scroll for Minimum and Maximum. Default is true.**/
+    private(set) var enableVerticalMinMax: Bool
 
     public init(
         size: CGSize = CGSize(width: 150, height: 60),
@@ -58,7 +60,8 @@ public struct StepperModal {
         showShadow: Bool = true,
         minText: String = "MIN",
         maxText: String = "MAX",
-        showErrorShakeAnimation: Bool = true
+        showErrorShakeAnimation: Bool = true,
+        enableVerticalMinMax: Bool = true
     ) {
         self.size = size
         self.maxNumber = maxNumber
@@ -75,6 +78,7 @@ public struct StepperModal {
         self.minText = minText
         self.maxText = maxText
         self.showErrorShakeAnimation = showErrorShakeAnimation
+        self.enableVerticalMinMax = enableVerticalMinMax
     }
 }
 

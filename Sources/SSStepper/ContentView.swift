@@ -153,6 +153,7 @@ extension ContentView {
 
     /**Calls during OnChanged callback of DragGesture inside outerView*/
     private func onDragChanged(value: DragGesture.Value) {
+        var errorAnimationLock = false
         let xDist =  abs(value.location.x - value.startLocation.x)
         let yDist =  abs(value.location.y - value.startLocation.y)
         errorOffset = 0
@@ -160,37 +161,43 @@ extension ContentView {
         /**Executes when use Swipes Down*/
         if value.startLocation.y <  value.location.y &&
             yDist > xDist &&
-            !verticalScrollLock &&
-            !isMin()
+            !verticalScrollLock
         {
-            withAnimation(.linear(duration: animationDuration)) {
-                let diffrence = value.location.y - value.startLocation.y
-                offsetValX = .zero
-                offsetValY = diffrence > maxVerticalPoint ? maxVerticalPoint : diffrence
+            if !model.enableVerticalMinMax {
+                errorAnimationLock = true
+            } else if !isMin() {
+                withAnimation(.linear(duration: animationDuration)) {
+                    let diffrence = value.location.y - value.startLocation.y
+                    offsetValX = .zero
+                    offsetValY = diffrence > maxVerticalPoint ? maxVerticalPoint : diffrence
+                }
+                if !isAllDirection {
+                    horizontalScrollLock = true
+                    verticalScrollLock = false
+                }
+                return
             }
-            if !isAllDirection {
-                horizontalScrollLock = true
-                verticalScrollLock = false
-            }
-            return
         }
 
         /**Executes when use Swipes Up*/
         if value.startLocation.y >  value.location.y &&
             yDist > xDist &&
-            !verticalScrollLock &&
-            !isMax()
+            !verticalScrollLock
         {
-            withAnimation(.linear(duration: animationDuration)) {
-                let diffrence = value.location.y - value.startLocation.y
-                offsetValX = .zero
-                offsetValY = abs(diffrence) > maxVerticalPoint ? -maxVerticalPoint : diffrence
+            if !model.enableVerticalMinMax {
+                errorAnimationLock = true
+            } else if !isMax() {
+                withAnimation(.linear(duration: animationDuration)) {
+                    let diffrence = value.location.y - value.startLocation.y
+                    offsetValX = .zero
+                    offsetValY = abs(diffrence) > maxVerticalPoint ? -maxVerticalPoint : diffrence
+                }
+                if !isAllDirection {
+                    horizontalScrollLock = true
+                    verticalScrollLock = false
+                }
+                return
             }
-            if !isAllDirection {
-                horizontalScrollLock = true
-                verticalScrollLock = false
-            }
-            return
         }
 
         /**Executes when use Swipes Left*/
@@ -229,13 +236,13 @@ extension ContentView {
             return
         }
 
-        if !occured && model.showErrorShakeAnimation {
-            withAnimation(.linear(duration: animationDuration).repeatCount(3)) {
-                errorOffset = 10
-                errorOffset = .zero
-                errorOffset = -10
-            }
-            occured = true
+        if !occured && model.showErrorShakeAnimation && !errorAnimationLock {
+                withAnimation(.linear(duration: animationDuration).repeatCount(3)) {
+                    errorOffset = 10
+                    errorOffset = .zero
+                    errorOffset = -10
+                }
+                occured = true
         }
     }
 
